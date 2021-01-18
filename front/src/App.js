@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'fontsource-roboto';
+import { makeStyles, Container } from "@material-ui/core";
+import 'fontsource-roboto';
+import { HomePageContainer } from "./containers/HomePage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const useStyles = makeStyles(() => ({
+    root: {
+        fontFamily: "Roboto",
+    },
+
+
+}));
+
+const App = () => {
+    const classes = useStyles();
+
+
+      return (
+        <Container maxWidth="sm" className={classes.root}>
+            <HomePageContainer />
+        </Container>
+      );
+};
 
 export default App;
