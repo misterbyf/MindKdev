@@ -1,3 +1,7 @@
 {
-  "port": 5000
+  "port": 5000,
+  "table": "users",
+  "jwt": "jwtToken",
+  "api-key": "89c16fb36a0485e82de0739f0dce0a1c-e438c741-72ae4d8c",
+  "client-link": "localhost:5000"
 }
