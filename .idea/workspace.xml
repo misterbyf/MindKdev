@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42a8d4b9-d45d-42ab-8e0f-35958a1736e6" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MindKTask" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="JSX" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\NodeJSFile\MindKTask\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1m7TrFRTIwgfkhGICFL7DsGk9SC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MERN_cat_link/client/src/pages/AuthPage.js" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="D:\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NodeJSFile\MindKTask\front\src\components\Switcher" />
+      <recent name="D:\NodeJSFile\MindKTask\front\src\components\Header\components" />
+      <recent name="D:\NodeJSFile\MindKTask\front\src\components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.auth.controller.js">
+    <configuration name="NodeJS" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
+      <method v="2" />
+    </configuration>
+    <configuration name="auth.controller.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api/controllers/auth.controller.js" working-dir="$PROJECT_DIR$/api/controllers">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Node.js/Chrome.NodeJS" />
+      <item itemvalue="Node.js.auth.controller.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.auth.controller.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42a8d4b9-d45d-42ab-8e0f-35958a1736e6" name="Default Changelist" comment="" />
+      <created>1608843826959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608843826959</updated>
+      <workItem from="1608843829658" duration="3408000" />
+      <workItem from="1609856275326" duration="20152000" />
+      <workItem from="1610066425060" duration="17082000" />
+      <workItem from="1610177452154" duration="3765000" />
+      <workItem from="1610315411694" duration="12755000" />
+      <workItem from="1610886059141" duration="12987000" />
+      <workItem from="1610903959733" duration="11789000" />
+      <workItem from="1610923239062" duration="17584000" />
+      <workItem from="1610941617326" duration="1317000" />
+      <workItem from="1610994423399" duration="222000" />
+      <workItem from="1611157404745" duration="12588000" />
+      <workItem from="1611171419128" duration="14524000" />
+      <workItem from="1611844092361" duration="513000" />
+      <workItem from="1612023900269" duration="1423000" />
+    </task>
+    <task id="LOCAL-00001" summary="knex to postgres">
+      <created>1610335209526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610335209527</updated>
+    </task>
+    <task id="LOCAL-00002" summary="3 tasks complete">
+      <created>1610940260499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610940260499</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JWT + mailer">
+      <created>1611187200800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611187200800</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="knex to postgres" />
+    <MESSAGE value="3 tasks complete" />
+    <MESSAGE value="JWT + mailer" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT + mailer" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="http://localhost:3000/">
+        <watch expression="event" language="JavaScript" />
+      </configuration>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="candidate" language="JavaScript" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
