@@ -1,13 +1,16 @@
 const db = require("../config/develop.config");
+const config = require("config");
 
 class UserController {
     //POST
     async createUser(req, res) {
-        const { name, surname } = req.body;
+        const { id, name, email, hash } = req.body;
         db.insert({
-            name: name,
-            surname: surname
-        }).into('person').then(
+            id,
+            name,
+            email,
+            hash
+        }).into(config.get("table")).then(
             () => {
                 res.sendStatus(200);
             }
@@ -16,14 +19,14 @@ class UserController {
 
     // GET
     async getUsers(req, res) {
-        db.select("*").from("person").then((data) => {
+        db.select("*").from(config.get("table")).then((data) => {
             res.send(data);
         });
     }
 
     async getOneUsers(req, res) {
         const id = req.params.id;
-        db.select(id).from("person").then((data) => {
+        db.select(id).from(config.get("table")).then((data) => {
             res.send(data);
         });
     }

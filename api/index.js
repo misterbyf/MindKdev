@@ -1,7 +1,11 @@
 const express = require("express");
 const config = require("config");
 const bodyParser = require("body-parser");
+const passport = require("passport");
+
 const userRoutes = require("./router/user.router.js");
+const authRouter = require("./router/auth.router");
+
 
 const app = express();
 const PORT = config.get("port") || 8080;
@@ -9,8 +13,11 @@ const PORT = config.get("port") || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use("/api/auth", authRouter);
 app.use("/api", userRoutes);
 
+app.use(passport.initialize());
+require("./middleware/passport")(passport);
 
 // Error handling
 
