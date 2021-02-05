@@ -13,8 +13,8 @@ const PORT = config.get("port") || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use("/api", userRoutes);
 app.use("/api/auth", authRouter);
+app.use("/api", userRoutes);
 
 app.use(passport.initialize());
 require("./middleware/passport")(passport);

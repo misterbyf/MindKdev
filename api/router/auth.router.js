@@ -7,6 +7,6 @@ router.post("/register", authController.register);
 
 router.post("/login", authController.login);
 
-router.post("/activate", authController.activateAccoutn);
+router.post("/activate", authController.activateAccount);
 
 module.exports = router;

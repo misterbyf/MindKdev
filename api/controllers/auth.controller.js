@@ -89,7 +89,7 @@ module.exports.register = async function(req, res) {
     }
 };
 
-module.exports.activateAccoutn = async function(req, res) {
+module.exports.activateAccount = async function(req, res) {
     //Берём токен
     const {token} = req.body;
     if(token) {
