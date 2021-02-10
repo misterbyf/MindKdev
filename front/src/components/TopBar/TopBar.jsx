@@ -1,13 +1,14 @@
 import React from "react";
+
 import Header from "../Header/Header";
-import { Profile } from "../Profile/Profile"
-import { Articles } from "../Articles/Articles";
-import { AddArticle } from "../AddArticle/Article";
-import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
+// import { Profile } from "../Profile/Profile"
+// import {ArticlesPage} from "../../containers/ArticlesPage";
+// import { CreateArticle } from "../CreateArticle";
+
 import PropTypes from "prop-types";
 
 
-export const HomePage = ({
+export const TopBar = ({
                              auth,
                              open,
                              handleMenu,
@@ -21,30 +22,30 @@ export const HomePage = ({
                              userData
 }) => {
   return(
-      <ErrorBoundary>
+      <React.Fragment>
         <Header
             auth={auth}
             open={open}
             handleMenu={handleMenu}
             anchorEl={anchorEl}
-            handleRenderComp ={handleRenderComp }
+            handleRenderComp ={handleRenderComp}
             renderComponent={renderComponent}
             nameSurname={nameSurname}
         />
-        {(renderComponent.whichComponentToShow === "Articles" && auth && <Articles/>)}
-        {(renderComponent.whichComponentToShow === "Add Article" && auth && <AddArticle/>)}
-        {(renderComponent.whichComponentToShow === "Profile" && auth && <Profile
-            register={register}
-            handleSubmit={handleSubmit}
-            onSubmit={onSubmit}
-            userData={userData}
-        />)}
+        {/*{(renderComponent.whichComponentToShow === "Articles" && auth && <Articles/>)}*/}
+        {/*{(renderComponent.whichComponentToShow === "Add Article" && auth && <AddArticle/>)}*/}
+        {/*{(renderComponent.whichComponentToShow === "Profile" && auth && <Profile*/}
+        {/*    register={register}*/}
+        {/*    handleSubmit={handleSubmit}*/}
+        {/*    onSubmit={onSubmit}*/}
+        {/*    userData={userData}*/}
+        {/*/>)}*/}
 
-      </ErrorBoundary>
+      </React.Fragment>
   )
 };
 
-HomePage.propTypes = {
+TopBar.propTypes = {
     auth: PropTypes.bool.isRequired,
     open: PropTypes.bool.isRequired,
     handleMenu: PropTypes.func.isRequired,

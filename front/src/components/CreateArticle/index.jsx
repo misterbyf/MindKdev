@@ -1,10 +1,10 @@
 import React from "react"
 import Typography from "@material-ui/core/Typography";
 
-export const AddArticle = () => {
+export const CreateArticle = () => {
     return(
         <Typography variant="h6">
-            Add Articles
+            Create Articles
         </Typography>
     )
 };
