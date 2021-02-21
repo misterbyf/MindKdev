@@ -1,10 +1,14 @@
 import React, { Fragment } from "react";
+import {Link} from "react-router-dom";
+
 import IconButton from "@material-ui/core/IconButton";
 import AccountCircle from '@material-ui/icons/AccountCircleOutlined';
+
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+// import {ArticlesPage} from "../../../containers/ArticlesPage";
 
-export const MyMenu = ({ onChange, anchorEl, open, handleRenderComp  }) => {
+export const MyMenu = ({ onChange, anchorEl, open, handleRenderComp }) => {
     return (
         <Fragment>
             <IconButton
@@ -31,17 +35,17 @@ export const MyMenu = ({ onChange, anchorEl, open, handleRenderComp  }) => {
                     horizontal: 'right',
                 }}
                 open={open}
-                handleRenderComp ={handleRenderComp }
+                handleRenderComp ={handleRenderComp}
             >
                 <MenuItem onClick={() => {
                     handleRenderComp ({whichComponentToShow: "Articles"})
-                }}>Articles</MenuItem>
+                }}><Link to="/articles">Articles</Link></MenuItem>
                 <MenuItem onClick={() => {
-                    handleRenderComp ({whichComponentToShow: "Add Article"})
-                }}>AddArticle</MenuItem>
+                    handleRenderComp ({whichComponentToShow: "Create Article"})
+                }}><Link to="/add">AddArticle</Link></MenuItem>
                 <MenuItem onClick={() => {
                     handleRenderComp ({whichComponentToShow: "Profile"})
-                }}>Profile</MenuItem>
+                }}><Link to="/user">Profile</Link></MenuItem>
             </Menu>
         </Fragment>
     );

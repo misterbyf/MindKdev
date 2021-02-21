@@ -1,10 +1,10 @@
 import React, {Fragment} from "react";
-import {HomePage} from "../components/HomePage/HomePage";
+import {TopBar} from "../components/TopBar/TopBar";
 import {Switcher} from "../components/Switcher/Switcher";
 import {useForm} from "react-hook-form";
 
 
-export const HomePageContainer = () => {
+export const HeaderContainer = () => {
     const [nameSurname, setNameSurname] = React.useState({
        name: "",
        surname: "",
@@ -71,7 +71,7 @@ export const HomePageContainer = () => {
     return(
         <Fragment>
             <Switcher auth={auth} onChange={handleChange}/>
-            <HomePage
+            <TopBar
                 auth={auth}
                 open={open}
                 handleMenu={handleMenu}
