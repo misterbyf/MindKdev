@@ -10,12 +10,11 @@ import {HeaderContainer} from "./containers/HeaderContainer";
 
 import 'fontsource-roboto';
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
-import {ArticlePage} from "./containers/ArticlePage";
-import {ArticlesPage} from "./containers/ArticlesPage";
+import {ArticlePage} from "./containers/Articles/ArticlePage";
+import {ArticlesPage} from "./containers/Articles/ArticlesPage";
 import {Profile} from "./components/Profile/Profile";
-import {CreateArticlePage} from "./containers/CreateArticlePage";
+import {CreateArticlePage} from "./containers/Articles/CreateArticlePage";
 import {Users} from "./containers/Users";
-import {ArticleState} from "./context/Article/ArticleState";
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -49,10 +48,8 @@ const App = () => {
                       <Route path="/404" component={NotFound} />
                       <Route path="/login" component={LoginPage} />
                       <Route path="/register" component={RegisterPage} />
-                      <ArticleState>
-                          <Route path="/article" component={ArticlePage} />
-                          <Route path="/articles" component={ArticlesPage} />
-                      </ArticleState>
+                      <Route path="/article" component={ArticlePage} />
+                      <Route path="/articles" component={ArticlesPage} />
                       <Route path="/user" component={Profile} />
                       <Route path="/add" component={CreateArticlePage}/>
                       <Route path={pathId} component={Users}/>
