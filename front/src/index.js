@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './index.css';
 import App from './App';
-//import Game from './Game';
-//import Shop from './Shop';
 import reportWebVitals from './reportWebVitals';
+import { QueryClient, QueryClientProvider } from 'react-query'
 
+const queryClient = new QueryClient();
 
 ReactDOM.render(
-    <App />,
+    <QueryClientProvider client={queryClient}>
+        <App />
+    </QueryClientProvider>,
+
   document.getElementById('root')
 );
 
