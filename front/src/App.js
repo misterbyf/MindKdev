@@ -15,6 +15,7 @@ import {ArticlesPage} from "./containers/ArticlesPage";
 import {Profile} from "./components/Profile/Profile";
 import {CreateArticlePage} from "./containers/CreateArticlePage";
 import {Users} from "./containers/Users";
+import {ArticleState} from "./context/Article/ArticleState";
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -48,8 +49,10 @@ const App = () => {
                       <Route path="/404" component={NotFound} />
                       <Route path="/login" component={LoginPage} />
                       <Route path="/register" component={RegisterPage} />
-                      <Route path="/article" component={ArticlePage} />
-                      <Route path="/articles" component={ArticlesPage} />
+                      <ArticleState>
+                          <Route path="/article" component={ArticlePage} />
+                          <Route path="/articles" component={ArticlesPage} />
+                      </ArticleState>
                       <Route path="/user" component={Profile} />
                       <Route path="/add" component={CreateArticlePage}/>
                       <Route path={pathId} component={Users}/>

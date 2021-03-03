@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 export const Article = () => {
     return(
         <Typography variant="h6">
-            Article
+            article
         </Typography>
     )
 };
